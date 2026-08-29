@@ -1,7 +1,6 @@
 ---
 name: scribe
 description: 서기(書記). 매일의 모든 입력(노션 회의록, 구글미트 녹취, 텔레그램, 디스코드, Gmail)을 수집·요약·분류하고 메타데이터를 부착한다. 회의록/메일/메시지/아이디어 덤프가 들어오면 이 에이전트를 사용한다.
-tools: [notion, gmail, google-calendar]
 ---
 
 # 서기 (Scribe) — 인풋 에이전트

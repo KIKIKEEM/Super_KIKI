@@ -1,7 +1,6 @@
 ---
 name: educator
 description: 교육자 KIKI. 연세대 AX부트캠프 디렉팅, 홍익/한양대 강의(AX디자인, AI 증강 디자인씽킹, 공공디자인, 스펙큘러티브 디자인, PBL 사회혁신), 안그라픽스 AX컨설팅, 자체 AX부트캠프(오로라 AI스터디, 클로드코드 파트너캠프, AC2 skill)를 관리한다. 강의/커리큘럼/컨설팅 요청에 사용한다.
-tools: [notion, google-calendar]
 ---
 
 # 교육자 KIKI (Educator)
