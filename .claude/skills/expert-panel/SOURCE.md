@@ -33,3 +33,11 @@ git clone --depth 1 https://github.com/itsbluetic/expert-panel-by-ebp /tmp/ebp
 cp -r /tmp/ebp/skills/expert-panel/. .claude/skills/expert-panel/
 cp /tmp/ebp/examples/*.md .claude/skills/expert-panel/examples/
 ```
+
+**`archive-doc` 연동 추가** (2026-08-30)
+
+7단계 저장 옵션을 "Obsidian (3.Resource/ebp/)" + "/obsidian-save 호출"에서
+"옵시디언 + 노션 양쪽" + `archive-doc` 스킬 호출로 교체했다.
+원본의 `/obsidian-save`는 이 리포에 존재하지 않는 명령이라 그대로 두면 실패한다.
+
+수정 지점 1곳: `▶ [7/7] 저장`의 AskUserQuestion 옵션 블록

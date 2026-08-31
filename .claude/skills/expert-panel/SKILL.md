@@ -305,11 +305,17 @@ AskUserQuestion(
   question: "전체 토론을 어디에 저장할까요?",
   header: "저장 위치",
   options: [
-    { label: "Obsidian (3.Resource/ebp/)", description: "/obsidian-save 호출 — EBP_{주제}.md" },
-    { label: "현재 디렉토리 .md 파일", description: "Write 도구로 EBP_{주제}.md 저장" },
+    { label: "옵시디언 + 노션 양쪽", description: "archive-doc 스킬 호출 — 볼트에 원본, 노션 DB에 검색용 사본" },
+    { label: "현재 디렉토리 .md 파일", description: "Write 도구로 EBP_{주제}.md 저장 (리포에만)" },
     { label: "저장 안 함", description: "대화창 출력만 유지" }
   ]
 )
+```
+
+**"옵시디언 + 노션 양쪽"을 고르면** 본문과 검증 리포트를 함께 넘긴다 — 떨어지면 "검증받은 결론"이라는 정보가 사라진다:
+
+```
+Skill(skill: "archive-doc", args: "EBP_{주제}.md EBP_{주제}_검증.md")
 ```
 
 **중요: 요약하지 말고 1~6단계 전문을 그대로 저장한다.** 임의 축약 금지.
