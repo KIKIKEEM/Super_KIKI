@@ -15,6 +15,8 @@ super-kiki/
 │   ├── 07-educator.md           # 교육자 — 연세대/홍익/한양/안그라픽스/자체캠프
 │   ├── 08-creator.md            # 크리에이터 — 유튜브 채널
 │   └── 09-community.md          # 커뮤니티 — 살롱/길드/주민 파이프라인
+├── .claude/skills/
+│   └── expert-panel/            # 근거 기반(EBP) 전문가 패널 토론 스킬 (외부 도입)
 ├── docs/
 │   ├── kiki-inc.md          # 주식회사 키키 정관 (버추얼 기업 구조)
 │   └── discord-blueprint.md # 오로라플래닛 디스코드 설계도
@@ -26,6 +28,16 @@ super-kiki/
 1. 이 폴더를 작업 디렉토리로 복사 (또는 git init 해서 진짜 "키키 깃허브"로)
 2. Claude Code 실행 → CLAUDE.md 자동 로드 → `/agents`로 서브에이전트 확인
 3. MCP 연결: Notion, Gmail, Google Calendar (이미 연결돼 있으면 생략)
+
+## 설치된 스킬
+
+| 스킬 | 호출 | 용도 |
+|---|---|---|
+| `expert-panel` | `/expert-panel [주제]` 또는 "전문가소환", "EBP 분석" | 근거 탐색(WebSearch) → 6인 전문가 패널 토론 → Core/Peripheral 구현 설계 → 최소 실험(MVE) 설계 |
+
+- `--quick` : 근거 탐색 단계 생략
+- `--experts [이름1, 이름2, ...]` : 패널 직접 지정
+- 출처/업데이트 방법: `.claude/skills/expert-panel/SOURCE.md`
 
 ## 아침 6시 자동화 (n8n)
 
